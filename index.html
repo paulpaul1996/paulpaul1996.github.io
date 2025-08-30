@@ -1,0 +1,68 @@
+<!doctype html>
+<meta property="og:title" content="Your Brand" />
+<meta property="og:description" content="One‑sentence summary of what you do." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/hero.jpg" />
+<link rel="icon" href="assets/favicon.png" />
+<style>
+:root { --max: 980px; }
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+body { margin: 0; font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color: #111; }
+header { padding: 64px 16px; text-align: center; background: #f7f7f7; }
+header img.logo { width: 72px; height: 72px; object-fit: contain; border-radius: 12px; }
+header h1 { margin: 16px 0 8px; font-size: 40px; }
+header p { margin: 0 auto; max-width: 720px; font-size: 18px; opacity: .9; }
+.container { max-width: var(--max); margin: 0 auto; padding: 40px 16px; }
+.grid { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.card { border: 1px solid #e5e5e5; border-radius: 14px; padding: 20px; }
+.hero { width: 100%; max-width: var(--max); display: block; border-radius: 16px; }
+h2 { margin-top: 0; }
+footer { padding: 40px 16px; text-align: center; color: #555; border-top: 1px solid #eee; }
+a { color: inherit; }
+.btn { display: inline-block; padding: 10px 16px; border-radius: 999px; border: 1px solid #111; text-decoration: none; }
+</style>
+</head>
+<body>
+<header>
+<img class="logo" src="assets/logo.png" alt="Logo" />
+<h1>Your Brand</h1>
+<p>A crisp one‑liner that explains your value. Keep it concise and concrete.</p>
+<p><a class="btn" href="#contact">Contact</a></p>
+</header>
+
+
+<main class="container">
+<img class="hero" src="assets/hero.jpg" alt="Product or team photo" />
+
+
+<section class="container">
+<h2>What we do</h2>
+<div class="grid">
+<div class="card"><h3>Benefit One</h3><p>Short sentence explaining it.</p></div>
+<div class="card"><h3>Benefit Two</h3><p>Short sentence explaining it.</p></div>
+<div class="card"><h3>Benefit Three</h3><p>Short sentence explaining it.</p></div>
+</div>
+</section>
+
+
+<section class="container">
+<h2>About</h2>
+<p>Two or three sentences about who you are and why you exist.</p>
+</section>
+
+
+<section id="contact" class="container">
+<h2>Contact</h2>
+<p>Email: <a href="mailto:hello@yourbrand.com">hello@yourbrand.com</a></p>
+<p>LinkedIn • Twitter/X • Instagram</p>
+</section>
+</main>
+
+
+<footer>
+<small>© <span id="y"></span> Your Brand • <a href="#">Privacy</a></small>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
