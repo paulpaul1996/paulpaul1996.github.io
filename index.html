@@ -1,68 +1,156 @@
+Here are the three companion pages you can add alongside your `index.html`. Save each as its own file in your repo root:
+
+---
+
+## about.html
+
+```html
 <!doctype html>
-<meta property="og:title" content="Sampatin Programming" />
-<meta property="og:description" content="IT Services" />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="assets/Sampatin Programming-story.png" />
-<link rel="icon" href="assets/favicon.png" />
-<style>
-:root { --max: 980px; }
-html { box-sizing: border-box; }
-*, *:before, *:after { box-sizing: inherit; }
-body { margin: 0; font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color: #111; }
-header { padding: 64px 16px; text-align: center; background: #f7f7f7; }
-header img.logo { width: 72px; height: 72px; object-fit: contain; border-radius: 12px; }
-header h1 { margin: 16px 0 8px; font-size: 40px; }
-header p { margin: 0 auto; max-width: 720px; font-size: 18px; opacity: .9; }
-.container { max-width: var(--max); margin: 0 auto; padding: 40px 16px; }
-.grid { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
-.card { border: 1px solid #e5e5e5; border-radius: 14px; padding: 20px; }
-.hero { width: 100%; max-width: var(--max); display: block; border-radius: 16px; }
-h2 { margin-top: 0; }
-footer { padding: 40px 16px; text-align: center; color: #555; border-top: 1px solid #eee; }
-a { color: inherit; }
-.btn { display: inline-block; padding: 10px 16px; border-radius: 999px; border: 1px solid #111; text-decoration: none; }
-</style>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Sampatin Programming</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header>
-<img class="logo" src="assets/Sampatin Programming-horizontal.png" alt="Logo" />
-<h1>Your Brand</h1>
-<p>A crisp one‑liner that explains your value. Keep it concise and concrete.</p>
-<p><a class="btn" href="#contact">Contact</a></p>
-</header>
+  <header>
+    <img class="logo" src="assets/Sampatin Programming-horizontal.png" alt="Sampatin Programming Logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
+  <main class="container">
+    <h1>About Sampatin Programming</h1>
+    <p>At Sampatin Programming, we specialize in creating simple, secure, and professional websites for small businesses and organizations. Our philosophy is straightforward: build lightweight, easy-to-maintain sites that serve your business without unnecessary complexity.</p>
 
-<main class="container">
-<img class="hero" src="assets/Sampatin Programming-story.png" alt="Product or team photo" />
+    <p>We take care of the technical side — hosting, domains, updates — so you can focus on your business. Whether you need a single-page presentation site or a more polished multi-page presence, we’ve got you covered.</p>
+  </main>
 
-
-<section class="container">
-<h2>What we do</h2>
-<div class="grid">
-<div class="card"><h3>Benefit One</h3><p>Short sentence explaining it.</p></div>
-<div class="card"><h3>Benefit Two</h3><p>Short sentence explaining it.</p></div>
-<div class="card"><h3>Benefit Three</h3><p>Short sentence explaining it.</p></div>
-</div>
-</section>
-
-
-<section class="container">
-<h2>About</h2>
-<p>Two or three sentences about who you are and why you exist.</p>
-</section>
-
-
-<section id="contact" class="container">
-<h2>Contact</h2>
-<p>Email: <a href="mailto:hello@yourbrand.com">hello@yourbrand.com</a></p>
-<p>LinkedIn • Twitter/X • Instagram</p>
-</section>
-</main>
-
-
-<footer>
-<small>© <span id="y"></span> Your Brand • <a href="#">Privacy</a></small>
-</footer>
-<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <footer>
+    <small>© <span id="y"></span> Sampatin Programming</small>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
+```
+
+---
+
+## services.html
+
+```html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services — Sampatin Programming</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img class="logo" src="assets/Sampatin Programming-horizontal.png" alt="Sampatin Programming Logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Our Services</h1>
+    <div class="grid">
+      <div class="card">
+        <h3>Starter Package</h3>
+        <p>One-page site with About, Services, and Contact sections. Includes domain, secure hosting, and 2 yearly updates.</p>
+        <p><strong>$300 setup + $20/month</strong></p>
+      </div>
+      <div class="card">
+        <h3>Standard Package</h3>
+        <p>Multi-page site (Home, About, Contact + 1 extra page). Includes domain, secure hosting, and quarterly updates.</p>
+        <p><strong>$500 setup + $40/month</strong></p>
+      </div>
+      <div class="card">
+        <h3>Premium Package</h3>
+        <p>Up to 6 pages, with proactive yearly refresh, unlimited updates, and analytics setup. Includes domain & hosting.</p>
+        <p><strong>$1000 setup + $75/month</strong></p>
+      </div>
+    </div>
+
+    <section class="container">
+      <h2>What’s Included</h2>
+      <ul>
+        <li>Domain registration & renewal</li>
+        <li>Secure HTTPS hosting</li>
+        <li>Maintenance & monitoring</li>
+        <li>Direct contact for updates</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <small>© <span id="y"></span> Sampatin Programming</small>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+```
+
+---
+
+## contact.html
+
+```html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Sampatin Programming</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img class="logo" src="assets/Sampatin Programming-horizontal.png" alt="Sampatin Programming Logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you. Reach out to discuss your website needs, request a quote, or ask any questions.</p>
+
+    <p>Email: <a href="mailto:hello@sampatinprogramming.com">hello@sampatinprogramming.com</a></p>
+    <p>LinkedIn • Twitter/X • Instagram</p>
+    <p><a class="btn" href="mailto:hello@sampatinprogramming.com">Request a Website</a></p>
+  </main>
+
+  <footer>
+    <small>© <span id="y"></span> Sampatin Programming</small>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+```
+
+---
+
+⚡ Notes:
+
+* I linked `style.css` so you can pull common CSS out of your `index.html` and reuse it across all pages. Just copy the `<style>` block from `index.html` into a new file `style.css` in your repo root.
+* The nav menu is consistent across all pages.
+* All three files live alongside `index.html` in your repo root.
+
+---
+
+Do you want me to also create the `style.css` file for you so you don’t have to maintain the CSS inline in each page?
