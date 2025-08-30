@@ -129,6 +129,13 @@ a.btn:hover {
   color: #fff;
 }
 
+.included-grid-2x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(2, 1fr);    /* 2 rows */
+  gap: 0;                                /* no spacing between cards */
+}
+
 .included-card {
   position: relative;
   overflow: hidden;
@@ -139,7 +146,7 @@ a.btn:hover {
 
 .included-card img {
   width: 100%;
-  height: 200px;
+  height: 200px;          /* adjust as needed */
   object-fit: cover;
   display: block;
   transition: transform 0.3s ease;
@@ -155,12 +162,13 @@ a.btn:hover {
   font-size: 16px;
 }
 
-/* Hover effect: pop up + image zoom */
+/* Hover effect */
 .included-card:hover {
-  transform: translateY(-10px);       /* moves card up */
-  box-shadow: 0 12px 24px rgba(0,0,0,0.18); /* deeper shadow */
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.18);
 }
 
 .included-card:hover img {
-  transform: scale(1.05);            /* slight image zoom */
+  transform: scale(1.05);
 }
+
