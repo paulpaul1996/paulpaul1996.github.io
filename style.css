@@ -26,10 +26,12 @@ border-bottom: 1px solid #eee;
 }
 
 header img.logo {
-width: 100%;
-max-width: 400px;
-height: auto;
-object-fit: contain;
+  width: 100%;        /* full width of header/container */
+  height: auto;       /* maintain aspect ratio */
+  max-width: none;    /* remove previous max-width */
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
 
 nav {
