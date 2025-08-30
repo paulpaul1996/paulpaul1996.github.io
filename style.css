@@ -1,0 +1,120 @@
+/\* style.css — shared styles for all pages \*/
+
+\:root {
+\--max: 1080px;
+}
+
+html {
+box-sizing: border-box;
+}
+\*, \*:before, \*:after {
+box-sizing: inherit;
+}
+
+body {
+margin: 0;
+font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+color: #111;
+background: #fff;
+}
+
+header {
+padding: 32px 16px;
+text-align: center;
+background: #f9f9f9;
+border-bottom: 1px solid #eee;
+}
+
+header img.logo {
+width: 100%;
+max-width: 400px;
+height: auto;
+object-fit: contain;
+}
+
+nav {
+margin-top: 16px;
+}
+
+nav a {
+margin: 0 12px;
+text-decoration: none;
+color: #111;
+font-weight: 500;
+}
+
+nav a\:hover {
+text-decoration: underline;
+}
+
+.container {
+max-width: var(--max);
+margin: 0 auto;
+padding: 40px 16px;
+}
+
+.grid {
+display: grid;
+gap: 24px;
+grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.card {
+border: 1px solid #e5e5e5;
+border-radius: 14px;
+padding: 20px;
+background: #fff;
+box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.hero {
+width: 100%;
+max-width: var(--max);
+display: block;
+border-radius: 16px;
+margin: 0 auto 40px auto;
+}
+
+h1, h2, h3 {
+margin-top: 0;
+}
+
+h1 {
+font-size: 36px;
+margin-bottom: 8px;
+}
+
+h2 {
+font-size: 28px;
+margin-bottom: 16px;
+}
+
+p {
+margin: 0 0 16px;
+}
+
+ul {
+padding-left: 20px;
+margin-bottom: 24px;
+}
+
+footer {
+padding: 40px 16px;
+text-align: center;
+color: #555;
+border-top: 1px solid #eee;
+}
+
+a.btn {
+display: inline-block;
+padding: 12px 20px;
+border-radius: 999px;
+border: 1px solid #111;
+text-decoration: none;
+margin-top: 8px;
+}
+
+a.btn\:hover {
+background: #111;
+color: #fff;
+}
