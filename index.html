@@ -1,52 +1,130 @@
-<!doctype html>
-<link rel="stylesheet" href="style.css" />
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sampatin Programming — Professional Web Solutions</title>
-  <meta name="description" content="Simple, secure, professional websites for small businesses and organizations." />
-  <link rel="icon" href="assets/favicon.png" />
-  <style>
-    /* full CSS styling here */
-  </style>
-</head>
-<body>
-  <header>
-    <img class="logo" src="assets/Sampatin Programming-logo.png" alt="Sampatin Programming Logo" />
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+/\* style.css — fully working version with full-width logo and interactive hover effects \*/
 
-  <main class="container">
-    <!-- Hero image -->
-    <img class="hero" src="assets/Sampatin Programming-horizontal.png" alt="Professional website preview" />
+\:root {
+\--max: 1080px;
+}
 
-    <!-- Our Services -->
-    <section class="container">
-      <h2>Our Services</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Starter Package</h3>
-          <p>One-page site with About, Services, and Contact sections. Includes domain, secure hosting, and 2 yearly updates.</p>
-          <p><strong>$300 setup + $20/month</strong></p>
-        </div>
-        <div class="card">
-          <h3>Standard Package</h3>
-          <p>Multi-page site (Home, About, Contact + 1 extra page). Includes domain, secure hosting, and quarterly updates.</p>
-          <p><strong>$500 setup + $40/month</strong></p>
-        </div>
-        <div class="card">
-          <h3>Premium Package</h3>
-          <p>Up to 6 pages, with proactive yearly refresh, unlimited updates, and analytics setup. Includes domain & hosting.</p>
-          <p><strong>$1000 setup + $75/month</strong></p>
-        </div>
-      </div>
-    </section>
+html {
+box-sizing: border-box;
+}
+\*, \*:before, \*:after {
+box-sizing: inherit;
+}
 
-    <!-- What’s Included -->
-    <section class="container">
+body {
+margin: 0;
+font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+color: #111;
+background: #fff;
+}
+
+header {
+padding: 32px 16px;
+text-align: center;
+background: #f9f9f9;
+border-bottom: 1px solid #eee;
+}
+
+header img.logo {
+width: 100%;        /\* full width */
+height: auto;
+max-width: none;    /* remove previous limit \*/
+object-fit: contain;
+display: block;
+margin: 0 auto;
+}
+
+nav {
+margin-top: 16px;
+}
+
+nav a {
+margin: 0 12px;
+text-decoration: none;
+color: #111;
+font-weight: 500;
+}
+
+nav a\:hover {
+text-decoration: underline;
+}
+
+.container {
+max-width: var(--max);
+margin: 0 auto;
+padding: 40px 16px;
+}
+
+.grid {
+display: grid;
+gap: 24px;
+grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.card {
+border: 1px solid #e5e5e5;
+border-radius: 14px;
+padding: 20px;
+background: #fff;
+box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+cursor: pointer;
+}
+
+.card\:hover {
+transform: translateY(-10px);
+box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+}
+
+.hero {
+width: 100%;
+max-width: var(--max);
+display: block;
+border-radius: 16px;
+margin: 0 auto 40px auto;
+}
+
+h1, h2, h3 {
+margin-top: 0;
+}
+
+h1 {
+font-size: 36px;
+margin-bottom: 8px;
+}
+
+h2 {
+font-size: 28px;
+margin-bottom: 16px;
+}
+
+p {
+margin: 0 0 16px;
+}
+
+ul {
+padding-left: 20px;
+margin-bottom: 24px;
+}
+
+footer {
+padding: 40px 16px;
+text-align: center;
+color: #555;
+border-top: 1px solid #eee;
+}
+
+a.btn {
+display: inline-block;
+padding: 12px 20px;
+border-radius: 999px;
+border: 1px solid #111;
+text-decoration: none;
+margin-top: 8px;
+transition: background 0.3s ease, color 0.3s ease;
+}
+
+a.btn\:hover {
+background: #111;
+color: #fff;
+}
