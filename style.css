@@ -24,12 +24,14 @@ header {
 }
 
 header img.logo {
-  width: 100%;
+  width: 80%;             /* smaller than full width */
+  max-width: 600px;       /* optional cap for large screens */
   height: auto;
-  max-width: none;
-  object-fit: contain;
   display: block;
-  margin: 0 auto;
+  margin: 16px auto 32px auto;  /* space above and below the logo */
+  border-radius: 16px;    /* rounded corners */
+  object-fit: cover;      /* maintain aspect ratio nicely */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* subtle shadow for banner effect */
 }
 
 nav {
