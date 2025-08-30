@@ -1,156 +1,35 @@
-Here are the three companion pages you can add alongside your `index.html`. Save each as its own file in your repo root:
-
----
-
-## about.html
-
-```html
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About — Sampatin Programming</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>About — Sampatin Programming</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <img class="logo" src="assets/Sampatin Programming-horizontal.png" alt="Sampatin Programming Logo" />
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+<header>
+<img class="logo" src="assets/Sampatin Programming-horizontal.png" alt="Sampatin Programming Logo" />
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
 
-  <main class="container">
-    <h1>About Sampatin Programming</h1>
-    <p>At Sampatin Programming, we specialize in creating simple, secure, and professional websites for small businesses and organizations. Our philosophy is straightforward: build lightweight, easy-to-maintain sites that serve your business without unnecessary complexity.</p>
 
-    <p>We take care of the technical side — hosting, domains, updates — so you can focus on your business. Whether you need a single-page presentation site or a more polished multi-page presence, we’ve got you covered.</p>
-  </main>
+<main class="container">
+<h1>About Sampatin Programming</h1>
+<p>At Sampatin Programming, we specialize in creating simple, secure, and professional websites for small businesses and organizations. Our philosophy is straightforward: build lightweight, easy-to-maintain sites that serve your business without unnecessary complexity.</p>
 
-  <footer>
-    <small>© <span id="y"></span> Sampatin Programming</small>
-  </footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+<p>We take care of the technical side — hosting, domains, updates — so you can focus on your business. Whether you need a single-page presentation site or a more polished multi-page presence, we’ve got you covered.</p>
+</main>
+
+
+<footer>
+<small>© <span id="y"></span> Sampatin Programming</small>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
-```
-
----
-
-## services.html
-
-```html
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Services — Sampatin Programming</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <img class="logo" src="assets/Sampatin Programming-horizontal.png" alt="Sampatin Programming Logo" />
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <main class="container">
-    <h1>Our Services</h1>
-    <div class="grid">
-      <div class="card">
-        <h3>Starter Package</h3>
-        <p>One-page site with About, Services, and Contact sections. Includes domain, secure hosting, and 2 yearly updates.</p>
-        <p><strong>$300 setup + $20/month</strong></p>
-      </div>
-      <div class="card">
-        <h3>Standard Package</h3>
-        <p>Multi-page site (Home, About, Contact + 1 extra page). Includes domain, secure hosting, and quarterly updates.</p>
-        <p><strong>$500 setup + $40/month</strong></p>
-      </div>
-      <div class="card">
-        <h3>Premium Package</h3>
-        <p>Up to 6 pages, with proactive yearly refresh, unlimited updates, and analytics setup. Includes domain & hosting.</p>
-        <p><strong>$1000 setup + $75/month</strong></p>
-      </div>
-    </div>
-
-    <section class="container">
-      <h2>What’s Included</h2>
-      <ul>
-        <li>Domain registration & renewal</li>
-        <li>Secure HTTPS hosting</li>
-        <li>Maintenance & monitoring</li>
-        <li>Direct contact for updates</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <small>© <span id="y"></span> Sampatin Programming</small>
-  </footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-</body>
-</html>
-```
-
----
-
-## contact.html
-
-```html
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact — Sampatin Programming</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <img class="logo" src="assets/Sampatin Programming-horizontal.png" alt="Sampatin Programming Logo" />
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <main class="container">
-    <h1>Contact Us</h1>
-    <p>We’d love to hear from you. Reach out to discuss your website needs, request a quote, or ask any questions.</p>
-
-    <p>Email: <a href="mailto:hello@sampatinprogramming.com">hello@sampatinprogramming.com</a></p>
-    <p>LinkedIn • Twitter/X • Instagram</p>
-    <p><a class="btn" href="mailto:hello@sampatinprogramming.com">Request a Website</a></p>
-  </main>
-
-  <footer>
-    <small>© <span id="y"></span> Sampatin Programming</small>
-  </footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-</body>
-</html>
-```
-
----
-
-⚡ Notes:
-
-* I linked `style.css` so you can pull common CSS out of your `index.html` and reuse it across all pages. Just copy the `<style>` block from `index.html` into a new file `style.css` in your repo root.
-* The nav menu is consistent across all pages.
-* All three files live alongside `index.html` in your repo root.
-
----
-
-Do you want me to also create the `style.css` file for you so you don’t have to maintain the CSS inline in each page?
